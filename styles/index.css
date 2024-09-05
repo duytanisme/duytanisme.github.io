@@ -6,3 +6,7 @@ div {
   display: inline;
   max-width: 100px;
 }
+
+.avatar-picture {
+  max-width: fit-content;
+}
