@@ -1,27 +1,27 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 55px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 55px;
 
-  background-color: pink;
+    background-color: pink;
 }
 
 .left-section {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .google-img {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .google-icon {
-  height: 30px;
+    height: 30px;
 }
