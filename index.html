@@ -36,6 +36,43 @@
   <footer>
     <p>&copy; 2025 Ryzan. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.querySelector('.cta a').addEventListener('click', function (event) {
+      event.preventDefault();
+
+      for (let i = 0; i < 10; i++) {
+        const icon = document.createElement('i');
+        icon.className = 'fas fa-hand-middle-finger';
+        icon.style.position = 'absolute';
+        icon.style.left = Math.random() * window.innerWidth + 'px';
+        icon.style.bottom = '0';
+        icon.style.fontSize = '2rem';
+        icon.style.color = '#00ffcc';
+        icon.style.animation = 'flyUp 3s ease-out forwards';
+        document.body.appendChild(icon);
+
+        setTimeout(() => {
+          icon.remove();
+        }, 3000);
+      }
+    });
+
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes flyUp {
+        0% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100vh);
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
 </body>
 
 </html>
